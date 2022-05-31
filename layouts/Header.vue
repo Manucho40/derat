@@ -114,4 +114,17 @@ export default {
 
 }
 
+@media (max-width: 768px){
+  .divLogo{
+   width: 300px;
+   padding: 0px;
+   margin-left: 500px;
+  }
+  
+
+  .infos{
+      visibility: hidden;
+  }
+}
+
 </style>

@@ -4,7 +4,7 @@
           <p>PROTEGER <br> VOTRE MAISON</p>
           <span class="lead mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</span>
           <div>
-              <b-button class="w-25 p-3" variant="success">OBTENIR UN DEVIS</b-button>
+              <b-button class="w-25 p-3 but" variant="success">OBTENIR UN DEVIS</b-button>
           </div>
       </div>
       <div class="banner-img animate__animated animate__fadeInLeft animate__delay-2s">
@@ -36,6 +36,7 @@ export default {
        justify-content: space-around;
        height: 90vh;
    }
+
    .banner-text{
        display: flex;
        flex-direction: column;
@@ -50,6 +51,7 @@ export default {
            display: flex;
            flex-direction: column;
            align-items: center;
+           justify-content: space-between;
             height: 100vh;
             position: relative;
             /* top: 100px; */
@@ -59,7 +61,12 @@ export default {
         }
 
         .banner-img img{
-            width: 200px;
+            width: 250px;
         }
+
+      .but{
+                width: 50% !important;
+                padding: 5px !important;
+            }
     }
 </style>
