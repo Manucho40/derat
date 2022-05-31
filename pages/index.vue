@@ -2,13 +2,17 @@
    <div class="main">
       <Banner />
       <Services />
+      <Produits />
+      <Tarifs />
    </div>
 </template>
 
 <script>
+import Tarifs from '../components/Tarifs.vue';
 export default {
-  name: 'IndexPage',
-  layout: "Header"
+    name: "IndexPage",
+    layout: "Header",
+    components: { Tarifs }
 }
 </script>
 

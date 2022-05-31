@@ -18,39 +18,12 @@
 
                     <!-- Right aligned nav items -->
                     <b-navbar-nav class="ml-auto">
-
-                        <b-nav-item-dropdown right>
-                        <!-- Using 'button-content' slot -->
-                        <template #button-content>
-                            Services
-                        </template>
-                        <b-dropdown-item href="#">serv</b-dropdown-item>
-                        <b-dropdown-item href="#">Sign Out</b-dropdown-item>
-                        </b-nav-item-dropdown>
-                        <b-nav-item-dropdown right>
-                        <!-- Using 'button-content' slot -->
-                        <template #button-content>
-                            Produits
-                        </template>
-                        <b-dropdown-item href="#">serv</b-dropdown-item>
-                        <b-dropdown-item href="#">Sign Out</b-dropdown-item>
-                        </b-nav-item-dropdown>
-                        <b-nav-item-dropdown right>
-                        <!-- Using 'button-content' slot -->
-                        <template #button-content>
-                            Tarifs
-                        </template>
-                        <b-dropdown-item href="#">serv</b-dropdown-item>
-                        <b-dropdown-item href="#">Sign Out</b-dropdown-item>
-                        </b-nav-item-dropdown>
-                        <b-nav-item-dropdown right>
-                        <!-- Using 'button-content' slot -->
-                        <template #button-content>
-                            infos
-                        </template>
-                        <b-dropdown-item href="#">serv</b-dropdown-item>
-                        <b-dropdown-item href="#">Sign Out</b-dropdown-item>
-                        </b-nav-item-dropdown>
+                        <b-navbar-nav >
+                             <b-nav-item href="#services">Services</b-nav-item>
+                             <b-nav-item href="#produits">Produits</b-nav-item>
+                             <b-nav-item href="#tarifs">Tarifs</b-nav-item>
+                             <b-nav-item href="#">Infos</b-nav-item>
+                        </b-navbar-nav>
                     </b-navbar-nav>
                     </b-collapse>
                 </b-navbar>
@@ -70,7 +43,7 @@ export default {
 <style>
       body{
       background-color: #e4e8e8;
-      height: 5000px;
+      
   }
 .header{
     background-color: #ffffff;

@@ -1,38 +1,37 @@
 <template>
     <div class="services" id="services">
-        <div class="espace-services">
-            <h1>Services</h1>
-            <p>Qu'est ce que nous offrons?</p>
-        </div>
+        <Separateur :infoSection="infoSection" />
         <div class="cardServices">
                 <CardServices />
-                <CardServices />
-                <CardServices />
+                <CardServices class="" />
+                <CardServices class=""/>
+                <CardServices class=""/>
+                <CardServices class=""/>
+                <CardServices class="" />
         </div>
     </div>
 </template>
 
 <script>
-import CardServices from './card-services.vue';
+    import CardServices from './CardServices.vue'
+
+
 export default {
-    components: { CardServices }
+    components: { CardServices },
+ 
+    data(){
+        return {
+            infoSection: {
+            nomSection: "Services",
+            description: "Qu'est ce que nous offrons?"
+        }
+        }
+    }
 }
 </script>
 
 <style>
-    .espace-services{
-        display: flex;
-        background-color: #ffff;
-        flex-direction: column;
-        padding: 20px;
-        align-items: center;
-    }
-    .espace-services h1{
-        font-size: 5rem;
-    }
-    .espace-services p {
-        font-size: 2rem;
-    }
+
 
     .espace-card{
         margin: auto;
